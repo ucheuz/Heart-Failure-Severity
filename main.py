@@ -9,7 +9,7 @@ print('Number of samples: ',data.shape[0])
 
 # print
 df 
-
+----------
 import matplotlib.pyplot as plt
 from sklearn.preprocessing import StandardScaler
 
@@ -29,7 +29,7 @@ def plotData(X,y):
     plt.ylabel('QRS')
     
 plotData(X,y)
-
+------------
 from sklearn.model_selection import train_test_split
 
 # train test split
@@ -63,7 +63,7 @@ PlotData(X_train, y_train, 'Training Set')
 # Test set plot
 plt.subplot(1, 2, 2)
 PlotData(X_test, y_test, 'Test Set')
-
+--------
 import numpy as np
 from sklearn.pipeline import Pipeline
 from sklearn.svm import SVC
@@ -92,7 +92,7 @@ print('Best cross-validated accuracy:', round(g.best_score_,2))
 # print hyperparameters
 print('Selected parameter 1 (degree):', g.best_params_['poly__degree']) 
 print('Selected parameter 2 (C):', g.best_params_['log_reg__C']) 
-
+-------
 def plotDecisionBoundary(model,X,y):
     # Create an array that represents the sampled feature space
     xx = np.linspace(-3, 3, 500) 
@@ -114,7 +114,7 @@ def plotDecisionBoundary(model,X,y):
 
 # plot the fitted model
 plotDecisionBoundary(g.best_estimator_, X_train, y_train)
-
+--------
 from sklearn.metrics import recall_score, confusion_matrix
 from sklearn.model_selection import cross_val_predict
 
@@ -138,7 +138,7 @@ plt.matshow(cm, cmap='gray')
 plt.title('Confusion Matrix for Multinomial Logistic Regression')
 plt.xlabel('Predicted labels', fontsize = 16)
 plt.ylabel('True labels', fontsize = 16)
-
+------
 # Create and train a new improved model (Logistic Regression with class weights balanced and a penalty)
 model2 = Pipeline([
     ('poly', PolynomialFeatures()),  
@@ -170,7 +170,7 @@ print('Average recall: ', np.around(mean_recall_macro_tuned,2))
 
 # Plot the classifier 
 plotDecisionBoundary(grid_search.best_estimator_, X_train,y_train) 
-
+----------
 # Amended classification
 from sklearn.model_selection import cross_val_score
 y_test_pred = grid_search.best_estimator_.predict(X_test)
