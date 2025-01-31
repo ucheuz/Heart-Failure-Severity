@@ -1,6 +1,6 @@
 # Heart-Failure-Severity
 A machine learning algorithm to diagnose severity of heart-failure, by distinguishing between  healthy patients (Label 0), patients with mild heart failure (Label 1), patients with severe heart failure (Label 2). The project includes:
-  A Python Script (main.py) that runs the model
+  A Python Script (main.py) that runs the model.
   A Juypter Notebook (Heart Failure Severity Juypter Notebook.ipynb) Task 2 with exploratory data analyis, model training and conclusions about the model at each stage.
 
 # Description
