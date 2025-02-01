@@ -2,6 +2,7 @@
 A machine learning algorithm to diagnose severity of heart-failure, by distinguishing between  healthy patients (Label 0), patients with mild heart failure (Label 1), patients with severe heart failure (Label 2). The project includes:
   A Python Script (main.py) that runs the model.
   A Juypter Notebook (Heart Failure Severity Juypter Notebook.ipynb) Task 2 with exploratory data analyis, model training and conclusions about the model at each stage.
+  A Tableau visualisation of the actual and predicted data.
 
 # Description
 In this project, I aimed to develop a machine learning model to diagnose the severity of heart failure by classifying patients into three categories: healthy, mild heart failure, and severe heart failure. The model utilised ejection fraction (EF) and QRS indices as key features to distinguish between these conditions. To improve classification performance, I applied a non-linear multinomial logistic regression with polynomial feature transformation, ensuring the model could capture complex patterns in the data. By using L2 regularisation to prevent overfitting and class balancing to handle underrepresented classes, the model achieved a high accuracy of 88%, with strong recall scores across all categories. The final implementation included grid search tuning, visualisation of the decision boundary and confusion matrix, and an evaluation of recall values to ensure effective diagnosis across all severity levels.
