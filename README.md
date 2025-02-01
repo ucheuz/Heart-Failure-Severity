@@ -16,7 +16,8 @@ File: datasets/heart_failure_data_complete.csv
 Description: A collection of patient records with features like HF (heart failure) labe, Ejection Fraction (EF), Global Longitudinal Strain (GLS) and QRS Complex (QRS)
 
 # Results
-Accuracy: 88%
+Accuracy: 88%.
+Tableau Visualisation: "https://public.tableau.com/views/HeartFailureSeverityML/Dashboard?:language=en-GB&publish=yes&:sid=&:redirect=auth&:display_count=n&:origin=viz_share_link"
 Conclusion: The performance numbers for the final model on the test data indicated a really good predictive capability. The accuracy is a value of 0.88: This means that the model correctly classified 88% of the test samples, which is a high result for a multi-class classification problem. The recall values are [0.92, 0.90, 1.0]: The recalls for each class showed that the model is highly effective at identifying samples across all heart failure classes: For Healthy (Class 0): A recall of 0.92 indicates that 92% of the actual healthy samples were correctly identified. For Mild HF (Class 1): A recall of 0.90 means that 90% of the mild heart failure cases were detected. For Severe HF (Class 2): A perfect recall of 1.0 suggests that all severe heart failure cases were correctly classified. The high average recall value of 0.94 demonstrates that the model maintains strong performance across all classes, suggesting it effectively balances precision and recall without being biased toward any single class. The model appears to generalize well to the test data. This is evident from the close alignment between the training and test performance numbers.
 
 # Contributors
